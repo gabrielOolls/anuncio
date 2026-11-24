@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Gratuito: Descubra o Mundo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lp-body">
+    <main class="lp-container">
+        <section class="lp-hero">
+            <span class="badge">GUIA GRATUITO</span>
+
+            <h1>Descubra Novos Destinos e Planeje Viagens Incríveis!</h1>
+
+            <p class="subtitle">
+                Descubra lugares surpreendentes, conheça novas culturas e aprenda
+                a organizar suas viagens com economia, segurança e praticidade.
+                Prepare-se para viver experiências inesquecíveis!
+            </p>
+            
+            <ul class="benefits">
+                <li>✅ Dicas para encontrar destinos incríveis</li>
+                <li>✅ Estratégias para economizar durante as viagens</li>
+                <li>✅ Orientações para escolher hospedagens</li>
+                <li>✅ Sugestões para organizar roteiros turísticos</li>
+                <li>✅ Cuidados importantes antes de viajar</li>
+                <li>✅ Ideias para aproveitar melhor cada destino</li>
+            </ul>
+        </section>
+
+        <section class="lp-form-box">
+            <h2>Onde podemos enviar seu guia de viagens?</h2>
+
+            <form id="leadForm" novalidate>
+                <div class="input-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" placeholder="Ex: João Silva" required>
+                    <small class="error-msg" id="erroNome"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Seu melhor E-mail *</label>
+                    <input type="email" id="email" placeholder="Ex: joao@email.com" required>
+                    <small class="error-msg" id="erroEmail"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="whatsapp">WhatsApp *</label>
+                    <input type="tel" id="whatsapp" placeholder="(11) 99999-9999" maxlength="15" required>
+                    <small class="error-msg" id="erroWhats"></small>
+                </div>
+
+                <!-- Campo oculto para guardar de qual anúncio o lead veio -->
+                <input type="hidden" id="origemLead" name="origem">
+
+                <button type="submit" class="btn-submit">RECEBER MEU GUIA GRATUITO</button>
+
+                <p class="privacy-note">🔒 Seus dados estão seguros e serão utilizados conforme nossa política de privacidade.</p>
+            </form>
+
+            <!-- Mensagem de Sucesso (Oculta inicialmente) -->
+            <div id="successBox" class="success-box hidden">
+                <h3>🎉 Parabéns, <span id="userNameSuccess"></span>!</h3>
+
+                <p>
+                    Seu cadastro foi realizado com sucesso!
+                    Agora você está mais perto de planejar sua próxima aventura.
+                    Prepare-se para descobrir novos destinos e viver experiências incríveis!
+                </p>
+
+                <a href="index.html" class="btn-back">Voltar ao Portal</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
